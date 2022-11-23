@@ -13,7 +13,7 @@
                 { "title": "Step 4", "caption": "Run", "action": "java -javaagent:sidekick-agent-bootstrap.jar -Dsidekick.apikey=<YOUR-SIDEKICK-API-KEY> -Dsidekick.agent.application.name=sidekick-demo-todo-app-java -Dsidekick.agent.application.stage=demo -Dsidekick.agent.application.version=1.0.0 -jar target/*.jar", "gif": ""
                 }
             ],
-        "iconURL": "aaa.co"
+        "iconURL": "https://runsidekick.github.io/sidekick-deployment-examples/assets/spring.png"
         }
     },
     "PYTHON": {
@@ -27,12 +27,12 @@
                 },
                 { "title": "Step 3", "caption": "Install requirements", "action": "pip install -r django_web_app/requirements.txt", "gif": ""
                 },
-                { "title": "Step 4", "caption": "Create a .env file and add the following into it with your own environment variables.", "action": "SIDEKICK_APIKEY=<YOUR-SIDEKICK-API-KEY> \n SIDEKICK_APPLICATION_NAME=CMSAPP \n SIDEKICK_APPLICATION_STAGE=PROD \n SIDEKICK_APPLICATION_VERSION=1.0.0 \n SIDEKICK_DEBUG_ENABLE=True", "gif": ""
+                { "title": "Step 4", "caption": "Configure environment variables.", "action": "export SIDEKICK_APIKEY=<YOUR-SIDEKICK-API-KEY>\n export SIDEKICK_APPLICATION_NAME=CMSAPP\n export SIDEKICK_APPLICATION_STAGE=PROD\n export SIDEKICK_APPLICATION_VERSION=1.0.0", "gif": ""
                 },
                 { "title": "Step 5", "caption": "Run", "action": "python run.py", "gif": ""
                 }
             ],
-        "iconURL": "aaa.co"
+        "iconURL": "https://runsidekick.github.io/sidekick-deployment-examples/assets/django.png"
         }
     },
     "NODE.JS": {
@@ -51,7 +51,7 @@
                 { "title": "Step 5", "caption": "Run", "action": "npm start", "gif": ""
                 }
             ],
-        "iconURL": "aaa.co"
+        "iconURL": "https://runsidekick.github.io/sidekick-deployment-examples/assets/express.png"
         }
     }
 }
