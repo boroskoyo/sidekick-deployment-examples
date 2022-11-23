@@ -1,8 +1,57 @@
 {
-    "python": [
-        {
-            "name":"Flask",
-            "repository": "https://github.com/boroskoyo/flask-todo"
+    "JAVA": {
+      "SPRINGWEB": {
+        "name": "Spring To-do App",
+        "repo": "https://github.com/runsidekick/sidekick-demo-todo-app-java",
+        "steps": [
+                { "title": "Step 1", "caption": "Clone your repository", "action": "git clone https://github.com/<your-username>/sidekick-demo-todo-java-app.git", "gif": ""
+                },
+                { "title": "Step 2", "caption": "Go to repo directory", "action": "cd sidekick-demo-todo-app-java", "gif": ""
+                },
+                { "title": "Step 3", "caption": "Compile", "action": "./mvnw package -DskipTests=true", "gif": ""
+                },
+                { "title": "Step 4", "caption": "Run", "action": "java -javaagent:sidekick-agent-bootstrap.jar -Dsidekick.apikey=<YOUR-SIDEKICK-API-KEY> -Dsidekick.agent.application.name=sidekick-demo-todo-app-java -Dsidekick.agent.application.stage=demo -Dsidekick.agent.application.version=1.0.0 -jar target/*.jar", "gif": ""
+                }
+            ],
+        "iconURL": "aaa.co"
         }
-    ]
+    },
+    "PYTHON": {
+      "DJANGO": {
+        "name": "Django CMS app",
+        "repo": "https://github.com/mehmetyz-test/django-app-example",
+        "steps": [
+                { "title": "Step 1", "caption": "Clone your repository", "action": "https://github.com/<your-username>/django-app-example", "gif": ""
+                },
+                { "title": "Step 2", "caption": "Go to repo directory", "action": "cd django-app-example", "gif": ""
+                },
+                { "title": "Step 3", "caption": "Install requirements", "action": "pip install -r django_web_app/requirements.txt", "gif": ""
+                },
+                { "title": "Step 4", "caption": "Create a .env file and add the following into it with your own environment variables.", "action": "SIDEKICK_APIKEY=<YOUR-SIDEKICK-API-KEY> \n SIDEKICK_APPLICATION_NAME=CMSAPP \n SIDEKICK_APPLICATION_STAGE=PROD \n SIDEKICK_APPLICATION_VERSION=1.0.0 \n SIDEKICK_DEBUG_ENABLE=True", "gif": ""
+                },
+                { "title": "Step 5", "caption": "Run", "action": "python run.py", "gif": ""
+                }
+            ],
+        "iconURL": "aaa.co"
+        }
+    },
+    "NODE.JS": {
+      "EXPRESS": {
+        "name": "Express To-do App",
+        "repo": "https://github.com/boroskoyo/todos-express-password-sidekick",
+        "steps": [
+                { "title": "Step 1", "caption": "Clone your repository", "action": "git clone https://github.com/<your-user-name>/todos-express-password-sidekick.git", "gif": ""
+                },
+                { "title": "Step 2", "caption": "Go to repo directory", "action": "cd todos-express-password-sidekick", "gif": ""
+                },
+                { "title": "Step 3", "caption": "Install dependencies", "action": "npm install", "gif": ""
+                },
+                { "title": "Step 4", "caption": "Change the < api-key > field at 25th line of app.js with your API Key.", "action": "apiKey: '<YOUR-SIDEKICK-API-KEY>'", "gif": ""
+                },
+                { "title": "Step 5", "caption": "Run", "action": "npm start", "gif": ""
+                }
+            ],
+        "iconURL": "aaa.co"
+        }
+    }
 }
